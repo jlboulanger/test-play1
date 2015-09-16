@@ -1,13 +1,34 @@
 @(message: String)
-
 @main("Welcome to Play") {
-       
+
+            @nav.render()
        <div class="container">
 
-      <div class="starter-template">
-            <h1>@message</h1>
-            
-       </div>
+	      <div class="panel panel-primary" style="margin-top: 50px">
+	            <div class="panel-heading">
+              <h3 class="panel-title">@message</h3>
+            </div>
+            @helper.form(action = routes.SecondPage.indexWithForm()) {
+    
+
+            <div class="panel-body">
+	            <div class="container">
+           <div class="panel-heading">
+             <h3 class="panel-title">Type a word</h3>
+           </div>
+           <div class="panel-body">
+             <div class="row">
+                <div class="col-md-2">
+                   <input type="text" name="field1" value="azerty">
+                </div>
+                <div class="col-md-2">
+                   <button type="submit" class="btn btn-lg btn-link">Next page</button>
+                </div>
+             </div>
+           </div>
+         </div>
+	       </div>
+	       }
     </div>
     
 }

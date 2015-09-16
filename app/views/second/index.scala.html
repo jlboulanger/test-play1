@@ -1,6 +1,27 @@
 @(message: String)
-@page2("---") {
+@page2("Page 2") {
+   
+        @nav.render()
+    <div class="container">
+
+          <div class="panel panel-primary" style="margin-top: 50px">
+                <div class="panel-heading">
+              <h3 class="panel-title">@message</h3>
+            </div>
     
-   this is another page
+
+            <div class="panel-body">
+                <div class="container">
+           <div class="panel-heading">
+             <h3 class="panel-title">To go back....</h3>
+           </div>
+           <div class="panel-body">
+             
+                   <a type="button" href="/" class="btn btn-lg btn-link">...click here</a>
+             </div>
+           </div>
+         </div>
+           </div>
+    </div>
     
 }

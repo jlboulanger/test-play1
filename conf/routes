@@ -4,7 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-GET     /second                     controllers.SecondPage.index()
+POST     /page2                     controllers.SecondPage.indexWithForm()
 GET     /page2                      controllers.SecondPage.index()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
